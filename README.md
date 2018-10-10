@@ -18,7 +18,7 @@ Have installed:
 3. In the active virtual environment install the depencencies `pip install -r requirements.txt`
 4. `cd django_api_project`  and activate the server `python manage.py runserver`
 
-###Usage
+### Usage
 1. `cd vue_giphy`
 2. `npm run server`
 
