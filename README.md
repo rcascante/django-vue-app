@@ -20,7 +20,7 @@ Have installed:
 
 ### Usage
 1. `cd vue_giphy`
-2. `npm run server`
+2. `npm run serve`
 
 
 
