@@ -1,6 +1,10 @@
 <template>
   <div id="app">
-    <GiphyList name="Hola" url="https://media.giphy.com/media/rnshwCdGdDyg0/giphy.gif"/>
+    <ul>
+      <li v-for="giphy in giphys" :key="giphy.id">
+            <GiphyList :name="giphy.name" :url="giphy.url"/>
+      </li>
+    </ul>
   </div>
 </template>
 
@@ -11,6 +15,29 @@ export default {
   name: "app",
   components: {
     GiphyList
+  },
+  data: function() {
+    return {
+      giphys: []
+    };
+  },
+  methods: {
+    fetchData: function() {
+      fetch("http://127.0.0.1:8000/giphy-app/list/")
+        .then(response => {
+          return response.json();
+        })
+        .then(data => {
+          console.log(data);
+          this.giphys = data;
+        })
+        .catch(error => {
+          throw error;
+        });
+    }
+  },
+  mounted() {
+    this.fetchData();
   }
 };
 </script>
