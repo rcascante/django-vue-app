@@ -6,15 +6,14 @@ Simple app that displays giphys and their name, I used this project as a first a
 
 ## Prerequisites
 Have installed:
-- Python3
+- Python 3.6.6
 - virtualenvironment
-- virtualenvwrapper
 - node
 
 ## Installing
 ### For Django Api
 1. Clone repository https://gist.github.com/PurpleBooth/109311bb0361f32d87a2
-2. Create the virtualenvironment for django-api: `mkvritualenv -a django-api -p python3 django-api`. Once created the venv will be active, if you want to deactivate it write `deactivate`, if you want to reactivate it again write `workon django-api`
+2. Create the virtualenvironment for django-api
 3. In the active virtual environment install the depencencies `pip install -r requirements.txt`
 4. `cd django_api_project`  and activate the server `python manage.py runserver`
 
