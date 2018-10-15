@@ -1,7 +1,7 @@
 <template>
     <div id="giphy_wrapper">
         <p>{{name}}</p>
-        <!-- <img :src="url"> -->
+        <img :src="url">
     </div>
 </template>
 
@@ -9,8 +9,8 @@
 export default {
   name: "GiphyList",
   props: {
-    name: String
-    // url: String
+    name: String,
+    url: String
   }
 };
 </script>

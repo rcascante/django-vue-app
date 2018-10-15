@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <GiphyList name="Hola"/>
+    <GiphyList name="Hola" url="https://media.giphy.com/media/rnshwCdGdDyg0/giphy.gif"/>
   </div>
 </template>
 
