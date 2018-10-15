@@ -1,5 +1,10 @@
 <template>
   <div id="app">
+    <ul>
+      <li>
+        <GiphyList>
+      </li>
+    </ul>
     <img alt="Vue logo" src="./assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App"/>
   </div>
