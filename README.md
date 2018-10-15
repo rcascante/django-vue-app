@@ -9,6 +9,7 @@ Have installed:
 - Python 3.6.6
 - virtualenvironment
 - node
+- vue cli
 
 ## Installing
 ### For Django Api
