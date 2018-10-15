@@ -1,22 +1,16 @@
 <template>
   <div id="app">
-    <ul>
-      <li>
-        <GiphyList>
-      </li>
-    </ul>
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <GiphyList name="Hola"/>
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import GiphyList from "./components/GiphyList.vue";
 
 export default {
   name: "app",
   components: {
-    HelloWorld
+    GiphyList
   }
 };
 </script>
